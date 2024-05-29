@@ -1,0 +1,34 @@
+<mat-card  class="container-fluid header"><div><img class="img" height="70px" width="65px" src="../assets/images/logo.jpg"></div><div class="are"> Bus Booking System</div></mat-card>
+<mat-card class="container des">
+  <div class="text">
+    <label class="st" for="fname">From</label>
+    <label class="rt" for="lname">To</label>
+  </div>
+  <div class="inp">
+    <form>
+      <input class="fr" ngModel type="text" placeholder="Enter the Place"  id="fname" name="fname" >
+      <input class="sn" ngModel type="text" placeholder="Enter the Place"  id="lname" name="lname">
+      <label for="start" class="de">Date</label>
+      <input type="date" class="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+      <input class="th" type="submit" value="Search">
+    </form>
+</div>
+  </mat-card>
+  <button type="button" cdkFocusInitial>Book</button>
+  <mat-card class="tel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Bus Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Fare</th>
+        <th scope="col">Seat</th>
+        <th scope="col">Book Here</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</mat-card>
+<mat-card class="container-fluid footer end"></mat-card>
